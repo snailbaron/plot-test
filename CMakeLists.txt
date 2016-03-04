@@ -22,7 +22,7 @@ endif()
 if(MSVC)
     set(GLEW_DIR "${CMAKE_SOURCE_DIR}/lib/glew-1.13.0")
     include_directories("${GLEW_DIR}/include")
-    find_library(GLEW_LIBRARY glew32s "${GLEW_DIR}/lib/Release/x64")
+    find_library(GLEW_LIBRARY glew32 "${GLEW_DIR}/lib/Release/x64")
 	link_libraries("${GLEW_LIBRARY}")
 endif()
 
